@@ -4,7 +4,7 @@ module.exports = {
   networks: {
     ganache: {
       host: "127.0.0.1",
-      port: 7545,
+      port: 8545,
       network_id: "*",
     },
     tenderly: {
@@ -12,13 +12,6 @@ module.exports = {
       port: 9545,
       network_id: "*",
       gasPrice: 0
-    },
-    kovan: {
-      provider: function () {
-        return new PrivateKeyProvider("<private-key-here>", "https://kovan.infura.io");
-      },
-      network_id: '42',
-      gasPrice: 20000,
     },
   },
 };

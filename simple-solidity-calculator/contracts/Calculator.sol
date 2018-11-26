@@ -16,7 +16,7 @@ contract Calculator {
     }
 
     function div(uint a, uint b) public {
-        require(b > 0, "The second parameter should be larger than 0");
+        // require(b > 0, "The second parameter should be larger than 0");
 
         c = a / b;
     }

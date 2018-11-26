@@ -7,6 +7,7 @@ contract('Calculator', function (accounts) {
     try {
       await fail.div(5, 0);
     } catch (e) {
+      console.log(e);
       error = e;
     }
 
