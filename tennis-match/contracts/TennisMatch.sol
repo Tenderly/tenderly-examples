@@ -2,7 +2,6 @@ pragma solidity >=0.4.21 <0.6.0;
 
 contract TennisMatch {
   address public owner;
-  uint8 public currentGame = 0;
 
   uint8 public playerAScore = 0;
   uint8 public playerAGamesWon = 0;
@@ -47,7 +46,8 @@ contract TennisMatch {
   }
 
   function resetGame() public onlyOwner {
-    currentGame = 0;
+    playerAGamesWon = 0;
+    playerBGamesWon = 0;
     _resetScore();
   }
 
