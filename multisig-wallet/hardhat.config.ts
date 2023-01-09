@@ -11,7 +11,7 @@ const config: HardhatUserConfig = {
   solidity: "0.8.17",
 
   networks: {
-    goerli: {
+    sepolia: {
       url: process.env.SEPOLIA_RPC || "",
       accounts: [
         process.env.SEPOLIA_PRIVATE_KEY_1 || "",
