@@ -11,6 +11,7 @@ Go to Tenderly dashboard > Forks and click "Create Fork". [Find out more](https:
 ### Step 2. Install dependencies
 
 ```bash
+cd multisig-wallet
 yarn
 ```
 
@@ -25,6 +26,7 @@ cp .tpl.env .env
 1. Copy Fork RPC URL and fill in the `FORK_URL` in `.env` file. Follow this guide to [get the FORK url](https://docs.tenderly.co/simulations-and-forks/how-to-create-a-fork/how-to-get-a-fork-json-rpc-url-and-id).
 2. Fill in `TENDERLY_PROJECT_SLUG` and `TENDERLY_USERNAME` in `.env` file. Follow this guide to [get project slug and username](https://docs.tenderly.co/other/platform-access/how-to-find-the-project-slug-username-and-organization-name)
 3. Fill in `TENDERLY_ACCESS_KEY` in `.env` file. Follow this gude to [get Tenderly access key](https://docs.tenderly.co/other/platform-access/how-to-generate-api-access-tokens).
+4. Optional: If running on a testnet, provide 3 private keys to .env file (`SEPOLIA_PRIVATE_KEY_1`, `SEPOLIA_PRIVATE_KEY_2`, `SEPOLIA_PRIVATE_KEY_3`) and uncomment lines 30..33 in `hardhat.config.ts`.
 
 ## Step 4: Run the example
 

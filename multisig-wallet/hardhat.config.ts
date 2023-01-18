@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 import * as tenderly from "@tenderly/hardhat-tenderly";
 
 dotenv.config();
-tenderly.setup({ automaticVerifications: false });
+tenderly.setup({ automaticVerifications: true });
 
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
@@ -13,11 +13,25 @@ const config: HardhatUserConfig = {
   networks: {
     sepolia: {
       url: process.env.SEPOLIA_RPC || "",
+      chainId: 11155111, // Sepolia Chain ID
       accounts: [
-        process.env.SEPOLIA_PRIVATE_KEY_1 || "",
-        process.env.SEPOLIA_PRIVATE_KEY_2 || "",
-        process.env.SEPOLIA_PRIVATE_KEY_3 || "",
-        process.env.SEPOLIA_PRIVATE_KEY_4 || "",
+        /*
+         TODO: (1) If you're following the tutorial at (LINK HERE)
+         then paste your Metamask wallet's private key in .env as SEPOLIA_PRIVATE_KEY_1
+         and uncomment the following line
+         */
+        // process.env.SEPOLIA_PRIVATE_KEY_1 || "", // uncomment me
+        //
+        //
+        //
+        /* 
+        TODO: (2) If you want to run `scripts/deploy-submit-execute.ts` on Sepolia
+        you have to specify 4 private keys
+        */
+        // process.env.SEPOLIA_PRIVATE_KEY_1 || "",
+        // process.env.SEPOLIA_PRIVATE_KEY_2 || "",
+        // process.env.SEPOLIA_PRIVATE_KEY_3 || "",
+        // process.env.SEPOLIA_PRIVATE_KEY_4 || "",
       ],
     },
 
