@@ -1,0 +1,16 @@
+{
+  "latest": [
+    {
+      "address": "0xE0cA5AE3EbF49fe68e920407f463f2B0a77977B7",
+      "name": "MultiSigWallet",
+      "network": "tenderly",
+      "timestamp": "2022-10-31T15:52:14.596Z"
+    },
+    {
+      "address": "0xFF39a3E734fE363E631441F6D24C7539240C2628",
+      "name": "MultiSigWallet",
+      "network": "goerli",
+      "timestamp": "2022-10-31T15:52:14.596Z"
+    }
+  ]
+}
