@@ -37,15 +37,19 @@ To run tests:
 
 ```bash
 cd hardhat
+npm run tenderly:reset-forks
 npx hardhat test --network tenderly
 ```
 
 To run the frontend:
 
-- make sure you ran `npm run tenderly:ui-dev-fork`
-- run:
-
 ```bash
-cd front
+cd hardhat
+
+# creates a new fork, deploys Multisig Wallet contract and TicTacToe contract, and places their addresses in front/.env
+npm run tenderly:ui-dev-fork
+cd ../front
+
+# start the svelte-kit app using the Fork
 npm run dev
 ```
