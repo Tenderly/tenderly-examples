@@ -1,3 +1,3 @@
 export const Deployments = {
-  MultisigWallet: "0x494989B018174B50bBb1bee439715963700B01ba",
+  MultisigWallet: "0xfd4c8208aC529e27980f48ed047541260dD07215",
 };

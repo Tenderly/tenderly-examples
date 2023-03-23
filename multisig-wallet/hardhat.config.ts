@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 import * as tenderly from "@tenderly/hardhat-tenderly";
 
 dotenv.config();
-tenderly.setup({ automaticVerifications: true });
+tenderly.setup({ automaticVerifications: false });
 
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
@@ -28,10 +28,10 @@ const config: HardhatUserConfig = {
         TODO: (2) If you want to run `scripts/deploy-submit-execute.ts` on Sepolia
         you have to specify 4 private keys
         */
-        // process.env.SEPOLIA_PRIVATE_KEY_1 || "",
-        // process.env.SEPOLIA_PRIVATE_KEY_2 || "",
-        // process.env.SEPOLIA_PRIVATE_KEY_3 || "",
-        // process.env.SEPOLIA_PRIVATE_KEY_4 || "",
+        process.env.SEPOLIA_PRIVATE_KEY_1 || "",
+        process.env.SEPOLIA_PRIVATE_KEY_2 || "",
+        process.env.SEPOLIA_PRIVATE_KEY_3 || "",
+        process.env.SEPOLIA_PRIVATE_KEY_4 || "",
       ],
     },
 
@@ -43,13 +43,10 @@ const config: HardhatUserConfig = {
   },
 
   tenderly: {
-    project: process.env.TENDERLY_PROJECT_SLUG || "SET ME",
-    username: process.env.TENDERLY_USERNAME || "SET ME",
-    privateVerification: true,
+    project: "project",
+    username: "nenad",
+    privateVerification: false,
   },
 };
-
-// disable automatic contract verification
-tenderly.setup({ automaticVerifications: false });
 
 export default config;

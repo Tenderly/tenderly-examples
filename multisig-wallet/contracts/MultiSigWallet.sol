@@ -20,7 +20,7 @@ contract MultiSigWallet {
     // Mapping to allow for easy checks if someone is an owner
     mapping(address => bool) public isOwner;
     // Number of confirmations required to execute a transaction
-    uint public numConfirmationsRequired;
+    uint8 public numConfirmationsRequired;
 
     // Tx object
     struct Transaction {
@@ -28,7 +28,7 @@ contract MultiSigWallet {
         uint value;
         bytes data;
         bool executed;
-        uint numConfirmations;
+        uint8 numConfirmations;
     }
 
     // mapping from tx index => owner => bool
@@ -59,7 +59,7 @@ contract MultiSigWallet {
         _;
     }
 
-    constructor(address[] memory _owners, uint _numConfirmationsRequired) {
+    constructor(address[] memory _owners, uint8 _numConfirmationsRequired) {
         require(_owners.length > 0, "owners required");
         require(
             _numConfirmationsRequired > 0 &&
@@ -171,7 +171,7 @@ contract MultiSigWallet {
             uint value,
             bytes memory data,
             bool executed,
-            uint numConfirmations
+            uint8 numConfirmations
         )
     {
         Transaction storage transaction = transactions[_txIndex];

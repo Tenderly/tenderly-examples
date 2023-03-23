@@ -12,7 +12,6 @@ async function main() {
   );
 
   console.log(owners);
-  console.log(await multisigWallet.getOwners());
 
   const funder = ethers.provider.getSigner(0);
 
