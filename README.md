@@ -1,8 +1,23 @@
-# Tenderly examples
+# Tenderly Examples
+
+<div align="center">
+    <a href="https://tenderly.co">
+        <img src="https://storage.googleapis.com/tenderly-public-assets/tenderly-logo-purple.png" alt="Tenderly" width="100%" height="auto" style="background-color: #ffffffb2; padding: 10px 20px; margin-bottom: 20px; box-sizing: border-box; max-width:200px;" />
+    </a>
+</div>
+
+<div align="center">
+
+[![Twitter](https://img.shields.io/twitter/follow/TenderlyApp?style=social)](https://twitter.com/intent/follow?screen_name=TenderlyApp)
+[![Github](https://img.shields.io/github/stars/Tenderly/tenderly-examples?style=social)](https://github.com/Tenderly/tenderly-examples)
+
+</div>
+
+## Introduction
 
 This repository contains examples showcasing the [Tenderly development platform](https://tenderly.co). Usually every example is accompanied by a blog post.
 
-# Table of Contents
+## Examples
 
 | Example name                         | Blog post                                                                                                                                                                           | Repository Link                                                                                                    |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -13,4 +28,14 @@ This repository contains examples showcasing the [Tenderly development platform]
 
 # Contributing
 
-If you have an idea showcasing the Tenderly suite of tools you can either open a Pull Request, [join our Discord](https://discord.gg/eCWjuvt) or send an e-mail to [support@tenderly.co](mailto:support@tenderly.co)
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for more information.
+
+## Contributors
+
+<a href="https://github.com/Tenderly/tenderly-examples/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Tenderly/tenderly-examples&max=100&columns=20" alt="tenderly-contributors" />
+</a>
+
+## License
+
+This project is licensed under the GNU License - see the [LICENSE](./LICENSE) file for the details.
