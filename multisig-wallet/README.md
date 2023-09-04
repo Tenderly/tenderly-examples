@@ -4,9 +4,9 @@ This project demonstrates deployment and testig of a simple Multisig wallet usin
 
 ## Setup
 
-### Step 1. Create a Fork
+### Step 1. Create a DevNet
 
-Go to Tenderly dashboard > Forks and click "Create Fork". [Find out more](https://docs.tenderly.co/simulations-and-forks/how-to-create-a-fork).
+Go to Tenderly dashboard > DevNets and click "Create a DevNet". [Find out more](https://docs.tenderly.co/devnets/setting-up-devnets-for-local-development).
 
 ### Step 2. Install dependencies
 
@@ -23,10 +23,27 @@ Run the following command to initialize an **.env** file for storing sensitive i
 cp .tpl.env .env
 ```
 
-1. Copy Fork RPC URL and fill in the `FORK_URL` in `.env` file. Follow this guide to [get the FORK url](https://docs.tenderly.co/simulations-and-forks/how-to-create-a-fork/how-to-get-a-fork-json-rpc-url-and-id).
-2. Fill in `TENDERLY_PROJECT_SLUG` and `TENDERLY_USERNAME` in `.env` file. Follow this guide to [get project slug and username](https://docs.tenderly.co/other/platform-access/how-to-find-the-project-slug-username-and-organization-name)
-3. Fill in `TENDERLY_ACCESS_KEY` in `.env` file. Follow this gude to [get Tenderly access key](https://docs.tenderly.co/other/platform-access/how-to-generate-api-access-tokens).
-4. Optional: If running on a testnet, provide 3 private keys to .env file (`SEPOLIA_PRIVATE_KEY_1`, `SEPOLIA_PRIVATE_KEY_2`, `SEPOLIA_PRIVATE_KEY_3`) and uncomment lines 30..33 in `hardhat.config.ts`.
+1. Fill in `TENDERLY_PROJECT_SLUG` and `TENDERLY_USERNAME` in `.env` file. Follow this guide to [get project slug and username](https://docs.tenderly.co/other/platform-access/how-to-find-the-project-slug-username-and-organization-name)
+2. Fill in `TENDERLY_ACCESS_KEY` in `.env` file. Follow this gude to [get Tenderly access key](https://docs.tenderly.co/other/platform-access/how-to-generate-api-access-tokens).
+3. Optional: If running on a public testnet, provide 3 private keys to .env file (`SEPOLIA_PRIVATE_KEY_1`, `SEPOLIA_PRIVATE_KEY_2`, `SEPOLIA_PRIVATE_KEY_3`) and uncomment lines 30..33 in `hardhat.config.ts`.
+4. Leave the rest unchanged for now
+
+## Step 6: Run tests against the DevNet
+
+Use the `tenderly:devnet:new` command to spawn a new devnet based on your template from step 1. It will update the .env file, in particular `TENDERLY_DEVNET_URL`, `TENDERLY_DEVNET_CHAIN_ID`.
+
+1. Create a DevNet template. 
+2. Copy DevNet slug and chain-id from YAML file
+   ![Alt text](image.png)
+3. Run the following command to spin up a new devnet
+   ```bash
+   npm run tenderly:devnet:new my-project my-testing-devnet 1
+                             # project   devnet template   chain-id
+   ```
+4. Run the tests
+   ```bash
+   npx hardhat test --network tenderly
+   ```
 
 ## Step 4: Run the example
 
@@ -36,7 +53,7 @@ To try out the multisig, from deployment to executing an approved transaction, r
 npx hardhat run scripts/run-deploy-submit-execute.ts --network tenderly
 ```
 
-The following script will:
+The script will:
 
 - Deploy the Multisig to a Tenderly Fork
 - Fund the Multisig smart contract
@@ -44,13 +61,6 @@ The following script will:
 - Send 2 confirmations for the submitted transaction
 - Execute the submitted transaction
 
-## Step 5: Run tests against the fork
-
-To run tests using a Fork in place of the network run
-
-```bash
-npx hardhat test --network tenderly
-```
 
 ### Granular usage:
 

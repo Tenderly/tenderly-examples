@@ -79,3 +79,4 @@ typings/
 
 # macOS
 .DS_Store
+.devnet
