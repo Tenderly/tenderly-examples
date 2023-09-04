@@ -13,8 +13,8 @@ const config: HardhatUserConfig = {
   networks: {
     tenderly: {
       // tenderly network used for running tests
-      chainId: 736031,
-      url: "https://rpc.vnet.tenderly.co/devnet/mini-safe/fbdd9913-7e93-4d93-88fb-f41dddd9856d",
+      chainId: 1,
+      url: "npm run tenderly:devnet:new project-slug devnet-slug devnet-chain-id",
     },
 
     // Sepolia config in case you still want public testnets
