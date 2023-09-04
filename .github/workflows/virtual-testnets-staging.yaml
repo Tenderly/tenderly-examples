@@ -1,0 +1,25 @@
+name: Staging contracts and updating others
+on: push
+jobs:
+  deploy_to_testnet:
+    name: Deploy Contracts To TestNet
+    runs-on: ubuntu-latest
+    env:
+      TENDERLY_ACCESS_KEY: ${{secrets.TENDERLY_ACCESS_KEY}}
+      DEPLOYER_PRIVATE_KEY: ${{secrets.DEPLOYER_PRIVATE_KEY}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.12.0
+          cache: npm
+
+      - name: Install
+        uses: npm ci
+
+      - name: deploy
+        working-directory: virtual-testnets-staging/foundry
+        run: deploy

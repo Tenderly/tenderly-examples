@@ -36,6 +36,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+**/node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -80,3 +81,5 @@ typings/
 # macOS
 .DS_Store
 .devnet
+/virtual-testnets/node_modules/
+*.out
