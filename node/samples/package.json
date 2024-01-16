@@ -1,0 +1,10 @@
+{
+  "name": "samples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.7.20",
+    "wagmi": "^2.5.7"
+  }
+}
