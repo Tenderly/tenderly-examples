@@ -1,0 +1,705 @@
+{
+  TENDERLY_ACCESS_KEY: 'xIvit7oqo8lTRd-w3udlZnXLCcHbzGyL',
+  NVM_INC: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/include/node',
+  TENDERLY_ACCOUNT_ID: 'nenad',
+  MANPATH: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/share/man:/opt/homebrew/share/man::',
+  NODE: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/bin/node',
+  INIT_CWD: '/Users/nenadvitorovic/Projects/tenderly-examples/simulations/api/linea',
+  PYENV_ROOT: '/Users/nenadvitorovic/.pyenv',
+  NVM_CD_FLAGS: '-q',
+  TERM: 'xterm-256color',
+  SHELL: '/bin/zsh',
+  HOMEBREW_REPOSITORY: '/opt/homebrew',
+  TMPDIR: '/var/folders/th/1g_v1n411d31dh1q9qjrmlkw0000gn/T/',
+  npm_config_global_prefix: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0',
+  COLOR: '0',
+  TERM_SESSION_ID: '7ce52678-5d85-44fc-b70e-009622b22bdd',
+  npm_config_noproxy: '',
+  npm_config_local_prefix: '/Users/nenadvitorovic/Projects/tenderly-examples/simulations',
+  PNPM_HOME: '/Users/nenadvitorovic/Library/pnpm',
+  ZSH: '/Users/nenadvitorovic/.oh-my-zsh',
+  NVM_DIR: '/Users/nenadvitorovic/.nvm',
+  USER: 'nenadvitorovic',
+  LS_COLORS: 'di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43',
+  COMMAND_MODE: 'unix2003',
+  npm_config_globalconfig: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/etc/npmrc',
+  SSH_AUTH_SOCK: '/private/tmp/com.apple.launchd.cJGYw7ImCB/Listeners',
+  __CF_USER_TEXT_ENCODING: '0x1F5:0x0:0x0',
+  npm_execpath: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/lib/node_modules/npm/bin/npm-cli.js',
+  PAGER: 'less',
+  TENDERLY_NODE_ACCESS_KEY: '1lr3OYkmWkcpDIypxzF5U8',
+  LSCOLORS: 'Gxfxcxdxbxegedabagacad',
+  PATH: '/Users/nenadvitorovic/Projects/tenderly-examples/simulations/node_modules/.bin:/Users/nenadvitorovic/Projects/tenderly-examples/simulations/api/linea/node_modules/.bin:/Users/nenadvitorovic/Projects/tenderly-examples/simulations/api/node_modules/.bin:/Users/nenadvitorovic/Projects/tenderly-examples/simulations/node_modules/.bin:/Users/nenadvitorovic/Projects/tenderly-examples/node_modules/.bin:/Users/nenadvitorovic/Projects/node_modules/.bin:/Users/nenadvitorovic/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/nenadvitorovic/.pyenv/shims:/Users/nenadvitorovic/Library/pnpm:/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/nenadvitorovic/.foundry/bin',
+  TERMINAL_EMULATOR: 'JetBrains-JediTerm',
+  npm_package_json: '/Users/nenadvitorovic/Projects/tenderly-examples/simulations/api/linea/package.json',
+  _: '/Users/nenadvitorovic/Projects/tenderly-examples/simulations/node_modules/.bin/ts-node',
+  IJ_RESTARTER_LOG: '/Users/nenadvitorovic/Library/Logs/JetBrains/WebStorm2023.3/restarter.log',
+  npm_config_userconfig: '/Users/nenadvitorovic/.npmrc',
+  npm_config_init_module: '/Users/nenadvitorovic/.npm-init.js',
+  __CFBundleIdentifier: 'com.jetbrains.WebStorm',
+  npm_command: 'exec',
+  PWD: '/Users/nenadvitorovic/Projects/tenderly-examples/simulations/api/linea',
+  npm_lifecycle_event: 'npx',
+  EDITOR: 'vi',
+  npm_package_name: 'simulations',
+  npm_config_npm_version: '10.5.0',
+  XPC_FLAGS: '0x0',
+  npm_config_node_gyp: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js',
+  npm_package_version: '1.0.0',
+  XPC_SERVICE_NAME: '0',
+  PYENV_SHELL: 'zsh',
+  SHLVL: '2',
+  HOME: '/Users/nenadvitorovic',
+  HOMEBREW_PREFIX: '/opt/homebrew',
+  IDEA_INITIAL_DIRECTORY: '/',
+  npm_config_cache: '/Users/nenadvitorovic/.npm',
+  LESS: '-R',
+  LOGNAME: 'nenadvitorovic',
+  npm_lifecycle_script: 'ts-node',
+  LC_CTYPE: 'UTF-8',
+  NVM_BIN: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/bin',
+  npm_config_user_agent: 'npm/10.5.0 node/v20.12.0 darwin arm64 workspaces/false',
+  TENDERLY_PROJECT: 'live-demo',
+  INFOPATH: '/opt/homebrew/share/info:',
+  HOMEBREW_CELLAR: '/opt/homebrew/Cellar',
+  npm_node_execpath: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0/bin/node',
+  npm_config_prefix: '/Users/nenadvitorovic/.nvm/versions/node/v20.12.0'
+}
+Decoded Events: Full Decoding Mode: 1.540s
+Access List undefined
+Asset Changes [
+  {
+    "token_info": {
+      "standard": "ERC20",
+      "type": "Fungible",
+      "contract_address": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+      "symbol": "axlusdc",
+      "name": "Axelar Bridged USDC",
+      "logo": "https://assets.coingecko.com/coins/images/26476/large/uausdc_D_3x.png?1696525548",
+      "decimals": 6,
+      "dollar_value": "0.9987220168113708"
+    },
+    "type": "Transfer",
+    "from": "0x81ee7797156ef586b49731a490f83066241b1220",
+    "to": "0xa5282a67337e0381dc47b9a16a91960b0a5eb9b2",
+    "amount": "11.264696",
+    "raw_amount": "11264696",
+    "dollar_value": "11.250299907886981964"
+  },
+  {
+    "token_info": {
+      "standard": "ERC20",
+      "type": "Fungible",
+      "contract_address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+      "symbol": "weth",
+      "name": "Bridged Wrapped Ether (Linea)",
+      "logo": "https://assets.coingecko.com/coins/images/31019/large/download_%2817%29.png?1696529855",
+      "decimals": 18,
+      "dollar_value": "3148.1201171875"
+    },
+    "type": "Mint",
+    "to": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+    "amount": "0.005",
+    "raw_amount": "5000000000000000",
+    "dollar_value": "15.7406005859375"
+  },
+  {
+    "token_info": {
+      "standard": "ERC20",
+      "type": "Fungible",
+      "contract_address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+      "symbol": "weth",
+      "name": "Bridged Wrapped Ether (Linea)",
+      "logo": "https://assets.coingecko.com/coins/images/31019/large/download_%2817%29.png?1696529855",
+      "decimals": 18,
+      "dollar_value": "3148.1201171875"
+    },
+    "type": "Transfer",
+    "from": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+    "to": "0x81ee7797156ef586b49731a490f83066241b1220",
+    "amount": "0.005",
+    "raw_amount": "5000000000000000",
+    "dollar_value": "15.7406005859375"
+  },
+  {
+    "token_info": {
+      "standard": "NativeCurrency",
+      "type": "Native",
+      "symbol": "eth",
+      "name": "Ethereum",
+      "logo": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+      "decimals": 18,
+      "dollar_value": "3146.659912109375"
+    },
+    "type": "Transfer",
+    "from": "0xa5282a67337e0381dc47b9a16a91960b0a5eb9b2",
+    "to": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+    "amount": "0.005",
+    "raw_amount": "5000000000000000",
+    "dollar_value": "15.733299560546875"
+  },
+  {
+    "token_info": {
+      "standard": "NativeCurrency",
+      "type": "Native",
+      "symbol": "eth",
+      "name": "Ethereum",
+      "logo": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+      "decimals": 18,
+      "dollar_value": "3146.659912109375"
+    },
+    "type": "Transfer",
+    "from": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+    "to": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+    "amount": "0.005",
+    "raw_amount": "5000000000000000",
+    "dollar_value": "15.733299560546875"
+  }
+]
+Balance Changes [
+  {
+    "address": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+    "dollar_value": "0",
+    "transfers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "address": "0x81ee7797156ef586b49731a490f83066241b1220",
+    "dollar_value": "4.490300678050518036",
+    "transfers": [
+      0,
+      2
+    ]
+  },
+  {
+    "address": "0xa5282a67337e0381dc47b9a16a91960b0a5eb9b2",
+    "dollar_value": "-4.482999652659893036",
+    "transfers": [
+      0,
+      3
+    ]
+  },
+  {
+    "address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+    "dollar_value": "15.733299560546875",
+    "transfers": [
+      4
+    ]
+  }
+]
+Decoded logs/events [
+  {
+    "name": "Transfer",
+    "anonymous": false,
+    "inputs": [
+      {
+        "soltype": {
+          "name": "from",
+          "type": "address",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": true,
+          "simple_type": {
+            "type": "address"
+          }
+        },
+        "value": "0x81ee7797156ef586b49731a490f83066241b1220"
+      },
+      {
+        "soltype": {
+          "name": "to",
+          "type": "address",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": true,
+          "simple_type": {
+            "type": "address"
+          }
+        },
+        "value": "0xa5282a67337e0381dc47b9a16a91960b0a5eb9b2"
+      },
+      {
+        "soltype": {
+          "name": "value",
+          "type": "uint256",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        "value": "11264696"
+      }
+    ],
+    "raw": {
+      "address": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+      "topics": [
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+        "0x00000000000000000000000081ee7797156ef586b49731a490f83066241b1220",
+        "0x000000000000000000000000a5282a67337e0381dc47b9a16a91960b0a5eb9b2"
+      ],
+      "data": "0x0000000000000000000000000000000000000000000000000000000000abe2b8"
+    },
+    "trace_index": null
+  },
+  {
+    "name": "Deposit",
+    "anonymous": false,
+    "inputs": [
+      {
+        "soltype": {
+          "name": "dst",
+          "type": "address",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": true,
+          "simple_type": {
+            "type": "address"
+          }
+        },
+        "value": "0x272e156df8da513c69cb41cc7a99185d53f926bb"
+      },
+      {
+        "soltype": {
+          "name": "wad",
+          "type": "uint256",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        "value": "5000000000000000"
+      }
+    ],
+    "raw": {
+      "address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+      "topics": [
+        "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+        "0x000000000000000000000000272e156df8da513c69cb41cc7a99185d53f926bb"
+      ],
+      "data": "0x0000000000000000000000000000000000000000000000000011c37937e08000"
+    },
+    "trace_index": null
+  },
+  {
+    "name": "Transfer",
+    "anonymous": false,
+    "inputs": [
+      {
+        "soltype": {
+          "name": "src",
+          "type": "address",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": true,
+          "simple_type": {
+            "type": "address"
+          }
+        },
+        "value": "0x272e156df8da513c69cb41cc7a99185d53f926bb"
+      },
+      {
+        "soltype": {
+          "name": "dst",
+          "type": "address",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": true,
+          "simple_type": {
+            "type": "address"
+          }
+        },
+        "value": "0x81ee7797156ef586b49731a490f83066241b1220"
+      },
+      {
+        "soltype": {
+          "name": "wad",
+          "type": "uint256",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        "value": "5000000000000000"
+      }
+    ],
+    "raw": {
+      "address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+      "topics": [
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+        "0x000000000000000000000000272e156df8da513c69cb41cc7a99185d53f926bb",
+        "0x00000000000000000000000081ee7797156ef586b49731a490f83066241b1220"
+      ],
+      "data": "0x0000000000000000000000000000000000000000000000000011c37937e08000"
+    },
+    "trace_index": null
+  },
+  {
+    "name": "Swap",
+    "anonymous": false,
+    "inputs": [
+      {
+        "soltype": {
+          "name": "sender",
+          "type": "address",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": true,
+          "simple_type": {
+            "type": "address"
+          }
+        },
+        "value": "0x272e156df8da513c69cb41cc7a99185d53f926bb"
+      },
+      {
+        "soltype": {
+          "name": "recipient",
+          "type": "address",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": true,
+          "simple_type": {
+            "type": "address"
+          }
+        },
+        "value": "0xa5282a67337e0381dc47b9a16a91960b0a5eb9b2"
+      },
+      {
+        "soltype": {
+          "name": "deltaQty0",
+          "type": "int256",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "int"
+          }
+        },
+        "value": "5000000000000000"
+      },
+      {
+        "soltype": {
+          "name": "deltaQty1",
+          "type": "int256",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "int"
+          }
+        },
+        "value": "-11264696"
+      },
+      {
+        "soltype": {
+          "name": "sqrtP",
+          "type": "uint160",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        "value": "3754906319996325259607083"
+      },
+      {
+        "soltype": {
+          "name": "liquidity",
+          "type": "uint128",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        "value": "31646979687084"
+      },
+      {
+        "soltype": {
+          "name": "currentTick",
+          "type": "int24",
+          "storage_location": "default",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "indexed": false,
+          "simple_type": {
+            "type": "int"
+          }
+        },
+        "value": "-199151"
+      }
+    ],
+    "raw": {
+      "address": "0x81ee7797156ef586b49731a490f83066241b1220",
+      "topics": [
+        "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67",
+        "0x000000000000000000000000272e156df8da513c69cb41cc7a99185d53f926bb",
+        "0x000000000000000000000000a5282a67337e0381dc47b9a16a91960b0a5eb9b2"
+      ],
+      "data": "0x0000000000000000000000000000000000000000000000000011c37937e08000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff541d48000000000000000000000000000000000000000000031b21e125aa575eaf7c2b00000000000000000000000000000000000000000000000000001cc862fb82acfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcf611"
+    },
+    "trace_index": null
+  }
+]
+Gas used: 146949 wei
+State changes: [
+  {
+    "address": "0x79756d90a882a1621ec35723849dac785694d93a",
+    "soltype": null,
+    "original": null,
+    "dirty": null,
+    "raw": [
+      {
+        "address": "0x79756d90a882a1621ec35723849dac785694d93a",
+        "key": "0x80c669875ec214080692b27904c5f35a1c60223a8dbf50e771bf84dd521cfa26",
+        "original": "0x000000000000000000000000000000000000000001fffd0a2da9d0f065bf9174",
+        "dirty": "0x000000000000000000000000000000000000000001fffd0a2ae93e0065bf925c"
+      }
+    ]
+  },
+  {
+    "address": "0x81ee7797156ef586b49731a490f83066241b1220",
+    "soltype": {
+      "name": "poolData",
+      "type": "tuple",
+      "storage_location": "memory",
+      "components": [
+        {
+          "name": "sqrtP",
+          "type": "uint160",
+          "storage_location": "memory",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000003",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        {
+          "name": "nearestCurrentTick",
+          "type": "int24",
+          "storage_location": "memory",
+          "offset": 160,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000003",
+          "indexed": false,
+          "simple_type": {
+            "type": "int"
+          }
+        },
+        {
+          "name": "currentTick",
+          "type": "int24",
+          "storage_location": "memory",
+          "offset": 184,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000003",
+          "indexed": false,
+          "simple_type": {
+            "type": "int"
+          }
+        },
+        {
+          "name": "locked",
+          "type": "bool",
+          "storage_location": "memory",
+          "offset": 208,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000003",
+          "indexed": false,
+          "simple_type": {
+            "type": "bool"
+          }
+        },
+        {
+          "name": "baseL",
+          "type": "uint128",
+          "storage_location": "memory",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000004",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        {
+          "name": "reinvestL",
+          "type": "uint128",
+          "storage_location": "memory",
+          "offset": 128,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000004",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        {
+          "name": "reinvestLLast",
+          "type": "uint128",
+          "storage_location": "memory",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000005",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        {
+          "name": "feeGrowthGlobal",
+          "type": "uint256",
+          "storage_location": "memory",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000006",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        {
+          "name": "secondsPerLiquidityGlobal",
+          "type": "uint128",
+          "storage_location": "memory",
+          "offset": 0,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        },
+        {
+          "name": "secondsPerLiquidityUpdateTime",
+          "type": "uint32",
+          "storage_location": "memory",
+          "offset": 128,
+          "index": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "indexed": false,
+          "simple_type": {
+            "type": "uint"
+          }
+        }
+      ],
+      "offset": 0,
+      "index": "0x0000000000000000000000000000000000000000000000000000000000000003",
+      "indexed": false
+    },
+    "original": {
+      "sqrtP": "3777620921490428765892629",
+      "nearestCurrentTick": "16577896",
+      "currentTick": "16578186",
+      "locked": false,
+      "baseL": "31646979687084",
+      "reinvestL": "7703216552394",
+      "reinvestLLast": null,
+      "feeGrowthGlobal": null,
+      "secondsPerLiquidityGlobal": null,
+      "secondsPerLiquidityUpdateTime": 0
+    },
+    "dirty": {
+      "sqrtP": "3754906319996325259607083",
+      "nearestCurrentTick": "16577896",
+      "currentTick": "16578065",
+      "locked": false,
+      "baseL": "31646979687084",
+      "reinvestL": "7703574154489",
+      "reinvestLLast": null,
+      "feeGrowthGlobal": null,
+      "secondsPerLiquidityGlobal": null,
+      "secondsPerLiquidityUpdateTime": 0
+    },
+    "raw": [
+      {
+        "address": "0x81ee7797156ef586b49731a490f83066241b1220",
+        "key": "0x0000000000000000000000000000000000000000000000000000000000000003",
+        "original": "0x000000000000fcf68afcf568000000000000000000031ff13d911a1ca3537015",
+        "dirty": "0x000000000000fcf611fcf568000000000000000000031b21e125aa575eaf7c2b"
+      },
+      {
+        "address": "0x81ee7797156ef586b49731a490f83066241b1220",
+        "key": "0x0000000000000000000000000000000000000000000000000000000000000004",
+        "original": "0x0000000000000000000007018b7c79ca000000000000000000001cc862fb82ac",
+        "dirty": "0x000000000000000000000701a0cd0cf9000000000000000000001cc862fb82ac"
+      }
+    ]
+  },
+  {
+    "address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+    "soltype": {
+      "name": "balanceOf",
+      "type": "mapping (address => uint256)",
+      "storage_location": "storage",
+      "offset": 0,
+      "index": "0x0000000000000000000000000000000000000000000000000000000000000003",
+      "indexed": false
+    },
+    "original": {
+      "0x81ee7797156ef586b49731a490f83066241b1220": "363560785517824022"
+    },
+    "dirty": {
+      "0x81ee7797156ef586b49731a490f83066241b1220": "368560785517824022"
+    },
+    "raw": [
+      {
+        "address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+        "key": "0x7bea5896c366fa319e36152733dc094b1924a56da6a2d10bd022bbc3b0915d2c",
+        "original": "0x000000000000000000000000000000000000000000000000050ba09bb30d4816",
+        "dirty": "0x000000000000000000000000000000000000000000000000051d6414eaedc816"
+      }
+    ]
+  },
+  {
+    "address": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+    "soltype": {
+      "name": "balanceOf",
+      "type": "mapping (address => uint256)",
+      "storage_location": "storage",
+      "offset": 0,
+      "index": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "indexed": false
+    },
+    "original": {
+      "0x81ee7797156ef586b49731a490f83066241b1220": "1956135741",
+      "0xa5282a67337e0381dc47b9a16a91960b0a5eb9b2": "0"
+    },
+    "dirty": {
+      "0x81ee7797156ef586b49731a490f83066241b1220": "1944871045",
+      "0xa5282a67337e0381dc47b9a16a91960b0a5eb9b2": "11264696"
+    },
+    "raw": [
+      {
+        "address": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+        "key": "0x5712af6a6b56237b3d9b88e39c94b0cc2e43fac70b98d89b437528eee9f3b0d2",
+        "original": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "dirty": "0x0000000000000000000000000000000000000000000000000000000000abe2b8"
+      },
+      {
+        "address": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+        "key": "0xba7f47d1a70216b3013bd52fef753931cef6b2b461fc26a5cc7cf46c8aaf9cf5",
+        "original": "0x000000000000000000000000000000000000000000000000000000007498433d",
+        "dirty": "0x0000000000000000000000000000000000000000000000000000000073ec6085"
+      }
+    ]
+  }
+]
+Simulation Success true

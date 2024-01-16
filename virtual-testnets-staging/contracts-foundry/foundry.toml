@@ -1,0 +1,7 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+unknown_chain = { key = "xIvit7oqo8lTRd-w3udlZnXLCcHbzGyL", chain = 73571, url = "https://virtual.mainnet.rpc.tenderly.co/0455d83d-fa26-4e8e-a89c-d12121985f8a/verify/etherscan" }

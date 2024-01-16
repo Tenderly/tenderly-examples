@@ -1,0 +1,22 @@
+{
+  "id": 73571,
+  "name": "Virtual Ethereum Mainnet",
+  "nativeCurrency": {
+    "name": "vEther",
+    "symbol": "vETH",
+    "decimals": 18
+  },
+  "rpcUrls": {
+    "default": {
+      "http": [
+        "https://virtual.mainnet.rpc.tenderly.co/..."
+      ]
+    }
+  },
+  "blockExplorers": {
+    "default": {
+      "name": "Tenderly Explorer",
+      "url": "https://dashboard.tenderly.co/explorer/vnet/..."
+    }
+  }
+}

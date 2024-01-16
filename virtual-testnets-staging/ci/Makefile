@@ -1,0 +1,1 @@
+capture-deployment 	:; ./capture-deployment.sh

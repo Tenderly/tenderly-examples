@@ -1,0 +1,9 @@
+[submodule "hello_virtual_testnets/lib/forge-std"]
+	path = hello_virtual_testnets/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "virtual-testnets-staging/contracts-foundry/lib/forge-std"]
+	path = virtual-testnets-staging/contracts-foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "virtual-testnets-state-sync/contracts/lib/forge-std"]
+	path = virtual-testnets-state-sync/contracts/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
