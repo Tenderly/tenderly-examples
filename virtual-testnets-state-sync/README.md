@@ -3,13 +3,14 @@
 [State Sync](https://docs.tenderly.co/virtual-testnets/state-sync) is a powerful feature that allows the Virtual TestNet
 to have access to the mainnet data it diverged from as they both progress.
 
+![State Sync](state-sync.png)
+
 ## Example
 
 The example demonstrates the following:
 
 - TestNet (Virtual Sepolia) accesses the latest state from original network (Sepolia).
 - After a TestNet **`write`**, the modified variable detaches from the Sepolia counterpart.
-- Note: you may find write to Sepolia don't show up in the output. This is because of latency in block confirmation.
 
 The example uses a modified [Counter contract](./contracts/src/Counter.sol), that contains a map of counters. It's
 deployed on Sepolia at `0xd01dF6d2354c5A869265dC9a9561E3544ac53262`.
@@ -23,11 +24,14 @@ The script takes a random entry in the counter map, and then:
 - sets the value on Virtual Sepolia, then reads values on both Sepolia and Virtual Sepolia
 - again sets the value on Sepolia, then reads values on both Sepolia and Virtual Sepolia
 
-## Environment setup
+### 1. Create a TestNet
 
 Create a [new TestNet](https://docs.tenderly.co/virtual-testnets/quickstart) based on Sepolia, using `735711155111` for
 the custom Chain ID.
 
+### 2. Environment setup
+
+Copy `.example.env` template and replace the following:
 - **`TENDERLY_VIRTUAL_TESTNET_CHAIN_ID`** the chain ID of the testnet. Use `735711155111`
 - **`TENDERLY_VIRTUAL_TESTNET_RPC_URL_SEPOLIA`** the RPC URL of the TestNet
 - **`PRIVATE_KEY`** for signing test transactions
@@ -37,7 +41,7 @@ cp .env.example .env
 vi .env # modify environment variables
 ```
 
-## Run the example
+### 3. Run the example
 
 Provide a private key to `ts-node` command to sign transactions that write values to `Counter` deployed at Sepolia.
 
@@ -47,7 +51,7 @@ yarn install
 npx ts-node src/index.ts
 ```
 
-### Results
+### 4. Results
 
 Key points to notice in **`Write`**:
 
@@ -85,5 +89,3 @@ State:
   sepolia: 100
   virtualSepolia: 10
 ```
-
-![State Sync](state-sync.png)
