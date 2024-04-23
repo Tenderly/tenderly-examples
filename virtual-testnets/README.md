@@ -28,10 +28,12 @@ npx ts-node src/ethers-6-https.ts
 ```
 
 ```bash
+source .env
 npx ts-node src/viem.ts 
 ```
 
 ```bash
+source .env
 npx ts-node src/viem-simulate.ts
 ```
 

@@ -3,7 +3,7 @@ import { vMainnet } from "./tenderly.config";
 
 async function example() {
 
-  const EXPLORER_BASE_URL = "https://dashboard.tenderly.co/explorer/vnet/47cdac98-cda3-431a-8fce-9f31037a3d0c";
+  const EXPLORER_BASE_URL = vMainnet.blockExplorers.default;
 
   const client = createPublicClient({
     chain: vMainnet,
@@ -37,7 +37,8 @@ async function example() {
       params: [erc20, to, value],
     });
   }
-``
+
+  ``;
 
   const balanceTxs = await Promise.all([
       tenderly_setBalance(strings),

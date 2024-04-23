@@ -3,7 +3,7 @@ import { vMainnet } from "./tenderly.config";
 import { generatePrivateKey, privateKeyToAccount } from "viem/accounts";
 
 
-const EXPLORER_BASE_URL = "https://dashboard.tenderly.co/explorer/vnet/47cdac98-cda3-431a-8fce-9f31037a3d0c";
+const EXPLORER_BASE_URL = vMainnet.blockExplorers.default;
 
 const account = privateKeyToAccount(generatePrivateKey());
 (async () => {
