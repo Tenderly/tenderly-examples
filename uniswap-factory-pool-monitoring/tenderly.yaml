@@ -1,0 +1,14 @@
+account_id: "dzeka"
+actions:
+  dzeka/monitoring:
+    runtime: v2
+    sources: actions
+    specs:
+      uniswapV3:
+        description: Monitoring UniswapV3 Factory Contract and adding Child/Pool to Contracts page with proper tag
+        function: example:actionFn
+        trigger:
+          type: alert
+          alert: {2391be3d-15ae-46d6-8d8d-eb629589d1c0}
+        execution_type: parallel
+project_slug: "monitoring"
