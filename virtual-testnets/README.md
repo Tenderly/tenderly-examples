@@ -22,16 +22,31 @@ vi .env # modify environment variables
 
 You can run the following examples without any additional configuration
 
+**Ethers: Query the network**
+
 ```bash
 source .env
 npx ts-node src/ethers-6-https.ts 
 ```
+**Ethers: Send a transaction**
+```bash
+source .env
+npx ts-node src/ethers-send-tx.ts 
+```
 
+**Viem: Query the network**
 ```bash
 source .env
 npx ts-node src/viem.ts 
 ```
 
+**Viem: Send a transaction**
+```bash
+source .env
+npx ts-node src/viem-send-tx.ts
+```
+
+**Viem: Simulate a transaction**
 ```bash
 source .env
 npx ts-node src/viem-simulate.ts
@@ -83,10 +98,9 @@ source src/contracts-staging/.env
 cd src/contracts-staging
 
 ## Create a fresh testnet
-export RPC_URL=$(create-testnet.sh)
-echo "Created a Virtual TestNet at ${RPC_URL}"
-export VERIFICATION_URL=$RPC_URL/verify/etherscan
+export VIRTUAL_NETWORK_RPC_URL=$(./create-testnet.sh)
+echo "Created a Virtual TestNet at ${VIRTUAL_NETWORK_RPC_URL}"
 
-## run the deployment
-bash deploy-to-testnet.sh
+### run the deployment
+./deploy-to-testnet.sh
 ```

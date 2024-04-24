@@ -1,16 +1,13 @@
-// file: ethers-6-https.ts`
 import * as ethers from "ethers";
 import { Mnemonic, Wallet } from "ethers";
-import { basename } from "./utils";
+import path from "node:path";
 
-const RPC_URL = process.env.VIRTUAL_MAINNET_RPC_URL!;
-const EXPLORER_BASE_URL = `https://dashboard.tenderly.co/explorer/vnet/${basename(RPC_URL)}`;
+const EXPLORER_BASE_URL = `https://dashboard.tenderly.co/explorer/vnet/${path.basename(process.env.VIRTUAL_MAINNET_RPC_URL!)}`;
 
-await (async () => {
-  const provider = new ethers.JsonRpcProvider(RPC_URL);
+const provider = new ethers.JsonRpcProvider(process.env.VIRTUAL_MAINNET_RPC_URL!);
+const signer = Wallet.fromPhrase(Mnemonic.fromEntropy(ethers.randomBytes(24)).phrase, provider);
 
-  const signer = Wallet.fromPhrase(Mnemonic.fromEntropy(ethers.randomBytes(24)).phrase, provider);
-
+(async () => {
   await provider.send("tenderly_setBalance", [
     signer.address,
     "0xDE0B6B3A7640000",
@@ -22,4 +19,7 @@ await (async () => {
   });
 
   console.log(`${EXPLORER_BASE_URL}/tx/${tx.hash}`);
-})();
+})().catch(e => {
+  console.error(e);
+  process.exitCode = 1;
+});

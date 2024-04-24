@@ -7,13 +7,15 @@ cd $FOUNDRY_REPO
 git diff --quiet -- foundry.toml; nochanges=$?
 if [ $nochanges -ne 0 ]; then
     echo "commit or clear changes from foundry.toml"
+    echo "cd ${FOUNDRY_REPO} && git checkout -- foundry.toml"
     exit 1
 fi
 
-VERIFICATION_URL=$RPC_URL/verify/etherscan
+export VERIFICATION_URL=$VIRTUAL_NETWORK_RPC_URL/verify/etherscan
+echo $VIRTUAL_NETWORK_RPC_URL
 
 ## Need the chain ID
-CHAIN_ID_HEX=`curl $RPC_URL \
+CHAIN_ID_HEX=`curl $VIRTUAL_NETWORK_RPC_URL \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{
@@ -42,7 +44,7 @@ read -r -d '' REQUEST_PAYLOAD <<EOF
 }
 EOF
 
-curl -X POST -H "Content-Type: application/json" "$RPC_URL" -d "$REQUEST_PAYLOAD"
+curl -X POST -H "Content-Type: application/json" "$VIRTUAL_NETWORK_RPC_URL" -d "$REQUEST_PAYLOAD"
 
 cd $ROOT
 ./deploy-command.sh

@@ -1,5 +1,6 @@
 import { createPublicClient, http } from "viem";
 import { vMainnet } from "./tenderly.config";
+import { tenderlySimulateTransaction } from "./viem-tenderly-actions";
 
 const client = createPublicClient({
   chain: vMainnet,
@@ -7,10 +8,8 @@ const client = createPublicClient({
 });
 
 (async () => {
-  const simulation: any = await client.request({
-    //@ts-ignore
-    method: "tenderly_simulateTransaction",
-    params: [
+  const simulation = await tenderlySimulateTransaction(
+    client, [
       // transaction object
       {
         from: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
@@ -23,7 +22,7 @@ const client = createPublicClient({
       // the block
       "latest",
     ],
-  });
+  );
 
   console.log("Trace");
   console.log(JSON.stringify(simulation.trace, null, 2));
@@ -34,4 +33,7 @@ const client = createPublicClient({
   console.log("Balance Changes");
   console.log(JSON.stringify(simulation.balanceChanges, null, 2));
 
-})();
+})().catch(e => {
+  console.error(e);
+  process.exitCode = 1;
+});
