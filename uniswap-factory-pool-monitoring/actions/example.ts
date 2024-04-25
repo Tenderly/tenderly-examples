@@ -8,7 +8,7 @@ const actionFn = async (context: Context, alertEvent: AlertEvent) => {
 	const provider = new ethers.providers.JsonRpcProvider(context.gateways.getGateway(Network.MAINNET));
 	const key = await context.secrets.get('ACCESS-KEY')
 	const networkId = "1";
-	const tagName = "child";
+	const tagName = "pool";
 
 	const resp = await provider.send("tenderly_traceTransaction", [`${alertEvent.hash}`]);
 	const poolCreatedLogs = resp.logs.filter((log: { name: string; }) => log.name === 'PoolCreated');
