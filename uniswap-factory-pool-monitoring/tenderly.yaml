@@ -1,6 +1,6 @@
-account_id: "dzeka"
+account_id: ""
 actions:
-  dzeka/monitoring:
+  account_id/project_slug:
     runtime: v2
     sources: actions
     specs:
@@ -9,6 +9,6 @@ actions:
         function: example:actionFn
         trigger:
           type: alert
-          alert: {2391be3d-15ae-46d6-8d8d-eb629589d1c0}
+          alert: {alert_id}
         execution_type: parallel
-project_slug: "monitoring"
+project_slug: ""
