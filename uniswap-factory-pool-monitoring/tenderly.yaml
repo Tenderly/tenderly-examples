@@ -1,6 +1,6 @@
 account_id: ""
 actions:
-  account_id/project_slug:
+  account_id/project_slug: # these will need to be changed according to the actual account_id/project_slug
     runtime: v2
     sources: actions
     specs:

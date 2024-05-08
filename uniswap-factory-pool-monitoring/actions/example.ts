@@ -1,44 +1,42 @@
-import { Network as ActionsNetwork, Context, AlertEvent } from '@tenderly/actions';
-import { Network as SDKNetwork, Tenderly } from '@tenderly/sdk';
+import { Context, AlertEvent } from '@tenderly/actions';
+import { Tenderly } from '@tenderly/sdk';
 const ethers = require('ethers');
 
-// Do not change function name.
 const actionFn = async (context: Context, alertEvent: AlertEvent) => {
+	const key = await context.secrets.get('ACCESS-KEY');
 
-	const provider = new ethers.providers.JsonRpcProvider(context.gateways.getGateway(ActionsNetwork.MAINNET));
-	const key = await context.secrets.get('ACCESS-KEY')
-
-	const accountSlug = '';
-	const projectSlug = '';
+	const accountSlug = '{account_id}';
+	const projectSlug = '{project_slug}';
 	const tagName = 'pool';
 
 	const tenderly = new Tenderly({
 		accountName: accountSlug,
 		projectName: projectSlug,
 		accessKey: key,
-		network: SDKNetwork.MAINNET, // Replace with the appropriate network
+		network: Number(alertEvent.network),
 	});
 
-	const resp = await provider.send("tenderly_traceTransaction", [`${alertEvent.hash}`]);
-	const poolCreatedLogs = resp.logs.filter((log: { name: string; }) => log.name === 'PoolCreated');
-	const poolInput = poolCreatedLogs[0].inputs.find((input: { name: string; }) => input.name === 'pool');
-	const poolAddress = poolInput.value;
+	const poolCreatedSignature = ethers.utils.id("PoolCreated(address,address,uint24,int24,address)");
 
-	async function addContract(childContractAddress: string) {
-		try {
-			await tenderly.contracts.add(childContractAddress, {
-				displayName: 'Pool'
-			});
-			await tenderly.contracts.update(childContractAddress, { appendTags: [tagName] });
-			console.log(`Pool contract is: ${childContractAddress}, and has been added with tag ${tagName}`);
-		}
-		catch (error) {
-			console.error('Error adding contract:', error);
+	let poolAddress = "";
+	for (const log of alertEvent.logs) {
+		if (log.topics[0] === poolCreatedSignature) {
+			const data = log.data;
+			const addressHex = data.substring(data.length - 40);
+			poolAddress = ethers.utils.getAddress('0x' + addressHex).toLowerCase();
+			break;
 		}
 	}
 
-	await addContract(poolAddress);
+	try {
+		await tenderly.contracts.add(poolAddress, {
+			displayName: 'Pool'
+		});
+		await tenderly.contracts.update(poolAddress, { appendTags: [tagName] });
+		console.log(`Pool contract is: ${poolAddress}, and has been added with tag ${tagName}`);
+	} catch (error) {
+		console.error('Error adding contract:', error);
+	}
 };
 
-// Do not change this.
-module.exports = { actionFn }; 
+module.exports = { actionFn };
