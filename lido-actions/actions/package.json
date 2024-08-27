@@ -1,0 +1,14 @@
+{
+    "name": "actions",
+    "scripts": {
+        "build": "node_modules/.bin/tsc"
+    },
+    "devDependencies": {
+        "typescript": "^4.9.5"
+    },
+    "dependencies": {
+        "@tenderly/actions": "^0.2.16",
+        "@types/node": "^20.8.10",
+        "axios": "^1.6.0"
+    }
+}
