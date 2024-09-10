@@ -21,9 +21,21 @@ This README provides a comprehensive guide on setting up a Tenderly alert for th
    - Name your alert appropriately for easy reference
 6. Save the alert and note down the `<ALERT_ID>` for later use
 
-## Step 2: Setting Up Your `tenderly.yaml` File
+## Step 2: Setting Up Your Web3 Action
 
-Create a `tenderly.yaml` file in the root directory of your local project with the following configuration:
+Navigate to the folder on your system where you want to place your Web3 Action code and the following command to initialize a new Web3 Actions project
+```bash
+tenderly actions init
+````
+By default, the project will be configured to use TypeScript. If you prefer plain JavaScript, add the language flag and specify javascript:
+```bash
+tenderly actions init --language javascript
+```
+When prompted, select an existing Tenderly project from your account or create a new one.
+
+Next, input the name of the root directory where your code will be stored. If you want to leave the default actions, press Enter, or input a custom directory name.
+
+Newly created `tenderly.yaml` file modify with the following configuration:
 
 ```yaml
 account_id: "<YOUR_ACCOUNT_ID>"
@@ -52,10 +64,10 @@ Replace the placeholders:
 ## Step 3: Adding the ACCESS-KEY to Secrets
 
 - Navigate to the Web3 Actions page on your Tenderly dashboard
-- Go to the Secrets tab
-- Add a new secret with the key ACCESS-KEY and the value of your actual access key
+- Go to the `Secrets` tab
+- Add a new secret with the key `ACCESS-KEY` and the value of your actual access key
 
-## Step 4: Deploying with Tenderly CLI
+## Step 4: Deploying Web3 Action
 
 - Open a terminal and navigate to your project directory
 - Run the following command to deploy your actions:
