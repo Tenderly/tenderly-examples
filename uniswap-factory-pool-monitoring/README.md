@@ -37,7 +37,7 @@ actions:
         function: example:actionFn
         trigger:
           type: alert
-          alert: <ALERT_ID>
+          alert: { <ALERT_ID> }
         execution_type: parallel
 project_slug: "<YOUR_PROJECT_SLUG>"
 ```
