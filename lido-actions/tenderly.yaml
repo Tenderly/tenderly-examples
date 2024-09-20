@@ -6,7 +6,7 @@ actions:
     specs:
       action_name:
         description: Get a notification when condition matches on Lido tx
-        function: lidoEvents:subscribeLidoImportantEventsFn
+        function: lidoEvents:subscribeToLidoValidatorExitRequestFn
         execution_type: parallel
         trigger:
           type: transaction
