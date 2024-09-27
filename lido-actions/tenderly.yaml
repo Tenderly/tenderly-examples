@@ -1,0 +1,22 @@
+account_id: ""
+actions:
+  account_slug/project_slug:
+    runtime: v2
+    sources: actions
+    specs:
+      action_name:
+        description: Get a notification when condition matches on Lido tx
+        function: lidoEvents:subscribeToLidoValidatorExitRequestFn
+        execution_type: parallel
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 1
+                eventEmitted:
+                  contract:
+                    address: 0x0de4ea0184c2ad0baca7183356aea5b8d5bf5c6e
+                  name: ValidatorExitRequest
+project_slug: ""
