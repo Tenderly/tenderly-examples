@@ -1,13 +1,18 @@
 # How to Interact and Manage New Pools Created by the UniswapV3Factory Contract Using Tenderly Alerts and Web3 Actions
 
-This README provides a comprehensive guide on setting up a Tenderly alert for the `PoolCreated` event emitted by the UniswapV3Factory contract on Ethereum Mainnet, and deploying a Web3 Action using the Tenderly CLI to handle the event.
+This guide walks you through how to manage and interact with new Pools using a Tenderly alerts and Web3Actions on Ethereum Mainnet. We'll also cover how to set up a Web3 Action with Tenderly Alerts using Tenderly's CLI to make this possible.
 
 ## Prerequisites
 
 - A Tenderly account
 - Access to the Tenderly dashboard
-- A project within Tenderly configured with your Ethereum smart contracts
+- A project within Tenderly
 - Tenderly CLI installed on your machine
+
+## Intro
+
+The alert you create will serve as the trigger for your Web3 Action. Whenever the specified event (PoolCreated) is emitted by the UniswapV3Factory contract, Tenderly will detect it through the alert system. This alert then automatically triggers the execution of your Web3 Action, allowing you to respond to new pool creations in real-time without manual intervention.
+This setup provides a powerful way to automate interactions with the Uniswap V3 ecosystem, enabling you to stay updated on new pool creations and perform custom actions as needed.
 
 ## Step 1: Creating an Alert in Tenderly
 
@@ -75,18 +80,13 @@ Replace the placeholders:
 tenderly actions deploy
 ```
 
-This command deploys your Web3 Action as configured in the tenderly.yaml file.
+This command deploys your Web3 Action as configured in the `tenderly.yaml` file.
 
-## How to Use
-Once deployed, the Web3 Action will automatically trigger whenever the `PoolCreated` event is emitted by the UniswapV3Factory contract. The action will execute the actionFn function defined in your code, which can perform tasks such as:
+## Step 5: Monitoring
 
-- Logging details about the newly created pool
-- Adding the new pool contract to your Tenderly project
-- Tagging the new pool contract for easier management
+This Web3 Action will automatically trigger whenever the `PoolCreated` event is emitted by the UniswapV3Factory contract. The action will execute the actionFn function defined in your code, and will perform the following:
+
+- Logging details about the newly created Pool
+- Adding the new Pool contract to your Tenderly project
+- Tagging the new Pool contract for easier management
 - Performing additional analysis or actions based on the pool creation
-
-You can monitor the execution of your Web3 Action in the Tenderly dashboard under the Web3 Actions tab.
-
-## Note on Alert as Trigger
-The alert you created in Step 1 serves as the trigger for your Web3 Action. Whenever the specified event (PoolCreated) is emitted by the UniswapV3Factory contract, Tenderly will detect it through the alert system. This alert then automatically triggers the execution of your Web3 Action, allowing you to respond to new pool creations in real-time without manual intervention.
-This setup provides a powerful way to automate interactions with the Uniswap V3 ecosystem, enabling you to stay updated on new pool creations and perform custom actions as needed.
